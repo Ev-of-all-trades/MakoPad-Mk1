@@ -78,6 +78,30 @@ static bool display_dirty = false;
 #define KEY_Y2 69
 
 // ============================================================================
+// KEY LABELS
+// ============================================================================
+
+static const char *base_labels[6] = {
+    "COPY", "PASTE", "SAVE",
+    "HOME", "END", "DELETE"
+};
+
+static const char *frc_labels[6] = {
+    "BUILD", "DEPLOY", "SIM",
+    "DEBUG", "RIOLOG", "SHUFFLE"
+};
+
+static const char *ds_labels[6] = {
+    "ENABLE", "DISABLE", "TELEOP",
+    "AUTO", "TEST", "E-STOP"
+};
+
+static const char *limelight_labels[6] = {
+    "LEFT", "FRONT", "RIGHT",
+    "", "", ""
+};
+
+// ============================================================================
 // DISPLAY CURRENT KEYS
 // ============================================================================
 static const char **get_layer_labels(void) {
